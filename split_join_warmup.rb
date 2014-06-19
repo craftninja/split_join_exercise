@@ -18,15 +18,15 @@ def generate_an_array_of_teams(teams)
 end
 
 def number_of_teams(teams)
-  teams.split(',').size
+  teams.split(', ').size
 end
 
 def return_australia(teams)
-  teams.split(',')[6].strip
+  teams.split(', ')[6]
 end
 
 def starts_with_C(teams)
-  team_list = teams.gsub(' ', '').split(',')
+  team_list = teams.split(', ')
   team_list.collect { |team| team if team[0] == 'C' }.compact
 end
 
